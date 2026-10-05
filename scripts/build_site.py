@@ -235,8 +235,20 @@ def build_detail(config: dict, s: dict) -> str:
   {description}
 </header>
 <main class="detail">
-  <div class="shots">
-    {''.join(shots)}
+  <div class="primary">
+    <div class="shots">
+      {''.join(shots)}
+    </div>
+    {warnings}
+    <section class="mods">
+      <h2>Mods in this setup</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Mod</th><th>Version</th><th>Settings</th><th>State</th></tr></thead>
+          <tbody>{rows}</tbody>
+        </table>
+      </div>
+    </section>
   </div>
   <div class="side">
     <a class="button primary download" href="{e(s['slug'])}.json" download>Download setup</a>
@@ -256,16 +268,6 @@ def build_detail(config: dict, s: dict) -> str:
       </ol>
     </section>
   </div>
-  {warnings}
-  <section class="mods">
-    <h2>Mods in this setup</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Mod</th><th>Version</th><th>Settings</th><th>State</th></tr></thead>
-        <tbody>{rows}</tbody>
-      </table>
-    </div>
-  </section>
 </main>"""
     return page(config, s["name"], body, "../../", s["description"][:160])
 
