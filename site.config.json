@@ -2,8 +2,8 @@
   "title": "Windhawk Setups",
   "tagline": "Desktop setups made with Windhawk mods, ready to import with Windhawk Share.",
   "repo": "https://github.com/YOUR-USERNAME/YOUR-GALLERY-REPO",
-  "toolDownload": "https://github.com/YOUR-USERNAME/windhawk-share/releases/latest",
-  "donateUrl": "",
+  "toolDownload": "https://github.com/haven80/windhawk-share/releases/latest",
+  "donateUrl": "https://www.paypal.com/pool/9tfJdsFP1t?sr=wccr",
   "donateLabel": "Support this project",
-  "maintainers": ["YOUR-USERNAME"]
+  "maintainers": ["haven80"]
 }
