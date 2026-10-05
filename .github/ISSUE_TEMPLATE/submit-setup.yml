@@ -1,0 +1,37 @@
+name: Submit a setup
+description: Share your Windhawk setup in the gallery.
+title: "[Setup]: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your setup! Create the package with **Windhawk Share** (Export tab → Save package), then fill in this form.
+
+        After you submit, an automatic check runs and replies here within a few minutes. If something needs fixing, edit this issue and the check runs again. Once approved, your setup appears in the gallery.
+
+        To update a setup you already shared, submit it again with the same package name.
+  - type: textarea
+    id: package
+    attributes:
+      label: Setup package (JSON)
+      description: Open the .json file you saved with Windhawk Share in Notepad, then copy and paste all of its content here.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop 1 to 5 screenshots here (PNG, JPEG or WebP, up to 3 MB each). The first one is used as the cover.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: My screenshots don't show personal information (names, emails, files, notifications).
+          required: true
+        - label: I agree to my setup and screenshots being published in this gallery.
+          required: true
