@@ -259,6 +259,7 @@ img { max-width: 100%; display: block; }
   gap: 2.5rem;
   align-items: start;
 }
+.primary { display: grid; gap: 2.5rem; min-width: 0; }
 .shots { display: grid; gap: 1.75rem; }
 .shots .window img { aspect-ratio: auto; object-fit: contain; }
 
@@ -281,7 +282,6 @@ img { max-width: 100%; display: block; }
 }
 .howto ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
 
-.notice, .mods { grid-column: 1 / -1; }
 .notice {
   background: var(--warn-bg);
   border-left: 4px solid var(--accent);
@@ -299,7 +299,7 @@ td:first-child { white-space: normal; overflow-wrap: anywhere; }
 
 @media (max-width: 860px) {
   .detail { grid-template-columns: 1fr; }
-  .side { position: static; }
+  .side { position: static; order: -1; }
 }
 
 /* ---------- Footer ---------- */
