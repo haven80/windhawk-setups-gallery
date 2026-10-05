@@ -1,7 +1,7 @@
 # Windhawk Setups
 
 A gallery of desktop setups made with Windhawk mods, ready to import with
-[Windhawk Share](https://github.com/YOUR-USERNAME/windhawk-share).
+[Windhawk Share](https://github.com/haven80/windhawksharestyle).
 
 > ⚠️ Windhawk Share is alpha software and requires Windhawk 2.0 or later.
 
